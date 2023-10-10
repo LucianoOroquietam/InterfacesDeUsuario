@@ -914,6 +914,14 @@ header form input{
         color: var(--color-blanco);
 
     }
+
+    h1.titulo-logo{
+        display: block;
+    }
+    img.icono-carrito-compra{
+        display: block;
+        width: 2rem;
+    }
    
 
 
