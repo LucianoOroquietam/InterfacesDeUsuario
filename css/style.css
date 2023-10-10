@@ -194,7 +194,7 @@ input:focus{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2.05s;
   }
 
-  .formulario-container .button-google:hover{
+  a .button-google:hover{
     background-color: var(--color-negro-3);
     color: var(--color-blanco);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2.05s;
@@ -204,6 +204,21 @@ input:focus{
     background-color: var(--color-negro);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2.05s;
   }
+  .btn-comentario{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out; /* Transición para el cambio de color de fondo */
+  }
+
+  .btn-comentario:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+    background-color: var(--color-acento-oscuro); /* Cambia el color de fondo al enfocar */
+   
+}
 
   .login-container p a{
     text-decoration:none;
@@ -214,6 +229,11 @@ input:focus{
     margin-top: 1.5rem;
     text-align: center;
     color: var(--color-blanco);
+}
+
+section.oferta{
+    display: flex;
+    justify-content: center;
 }
 
 /*Registro*/
@@ -492,6 +512,11 @@ main section h2 {
     width: 100%;
 }
 
+.oferta .cuerpo-card{
+    
+    width: 50%;
+}
+
 
 /* Estilos para el carrusel */
 .container-carrusel {
@@ -517,7 +542,6 @@ main section h2 {
     z-index: 1;
 }
 
-/* Estilos adicionales según tus preferencias */
 
 /*Footer*/
 
