@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container login-container-registro">
+        <div class="formulario-container-registro">
+            <div class="container-logo">
+                <h1>Gamer House </h1>
+                <img style="width: 100px;" src="imagenes/logo blanco.svg" alt="">
+            </div>
+            
+            <form action="" class="form-registro">
+                <div class="input-grid">
+                    <label for="email">Nombre</label>
+                    <label for="email">Apellido</label>
+                    <input type="text" name="nomrbe" id=""  required>
+    
+            
+                    <input type="text" name="apellido" id="" required>
+    
+                </div>
+                
+                <label for="email">Nombre Usuario</label>
+                <input type="email" name="usuario" id="" required>
+
+                <label for="email">Edad</label>
+                <input type="number" name="edad" id="" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" required>
+
+                <div class="input-grid">
+                    <label for="contraseña">Contraseña</label>
+                    <label for="contraseña">Repetir contraseña</label>
+                    <input type="password" name="contraseña" id="" required>
+                    <input type="password" name="contraseña" id="" required>
+                </div>
+
+            </form>
+       
+          
+
+            <div class="container-buttons container-buttons-registro">
+                <div class="container-captcha">
+                    <button class="captcha" id="captcha" type="submit"></button>
+                    <p> No soy un robot </p>
+                    <img src="imagenes/recapthcha.svg" alt="">
+            
+                </div>
+
+                <a  class="a-button" href="index.html"><button class="button">Registrate </button></a>
+                <a class="a-button" href="index.html"><button class="button button-google">Registrate con google</button></a>
+                <a class="a-button" href="index.html"><button class="button button-facebook">Registrate con facebook</button></a>
+                
+                
+                
+
+                
+                
+            </div>
+
+            <p>¿Usted ya tiene cuenta? <a href="login.html">Ingrese</a></p>
+     </div>
+    </div>
+    <script src="js/captcha.js"></script>
+    
+</body>
+</html>
