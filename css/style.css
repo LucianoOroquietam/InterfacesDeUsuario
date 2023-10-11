@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: 100vh;
     background-color: var(--color-primario-oscuro);
     font-family: var(--fuente-h1-h2-h3);
     
@@ -760,9 +760,14 @@ header .menu{
     display: flex;
     align-items: center;
 }
-.menu-hamburguesa img{
-    width: 1.2em;
+header div a{
+    text-decoration: none;
+   
 }
+header div a .titulo-logo{
+    margin-left: -300px;
+}
+
 .buscador{
     background-color: var(--color-blanco);
     border-radius: 1rem;
@@ -889,6 +894,7 @@ nav .nav {
     
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
 
 
     /*banner*/
