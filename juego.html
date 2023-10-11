@@ -15,54 +15,65 @@
     
 
 
-    <header>
-        <div class="menu">
-            <nav class="menu-hamburguesa" id="btn-toogle">
-                <img id="hamburguesa" src="imagenes/iconos/icons8-menú-50.png" alt="">
-                <ul id="navegacion">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="index.html">
-
-                <div class="container-logo">
-                    <h1 class="titulo-logo">Gamer House</h1>
-                    <img class="icono-logo-header" src="imagenes/logo blanco.svg" alt="">
-                </div>
-            </a>
-          
+        <header>
+      
+            <div class="menu-button">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
             
-        </div>
-       
+            <nav>
+              <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </nav>
         
-        <form class="buscador" action="#" method="get">
-            <input type="text" name="q" placeholder="Buscar Juego...">
-           
-            <img src="imagenes/iconos/icons8-lupa-50.png" alt="">
-        </form>
-
-        <div class="icono-carrito-perfil">
     
-            <img  src="imagenes/iconos/icons8-carrito-de-compras-30.png" alt="carrito de compra">
-        
+          <div>
+            <a href="index.html">
+              <div class="container-logo">
+                <h1 class="titulo-logo">Gamer House</h1>
+                <img
+                  class="icono-logo-header"
+                  src="imagenes/logo blanco.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+    
+          <div class="buscador" action="#" method="get">
+            <input type="text" name="q" placeholder="Buscar Juego..." />
+    
+            <img src="imagenes/iconos/icons8-lupa-50.png" alt="" />
+          </div>
+    
+          <div class="icono-carrito-perfil">
+            <img
+              class="icono-carrito-compra"
+              src="imagenes/iconos/icons8-carrito-de-compras-30.png"
+              alt="carrito de compra"
+            />
+    
             <nav class="menu-perfil">
-                <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil">
-                <ul>
-                    <li><a href="#">Mi perfil</a></li>
-                    <li><a href="#">Favoritos</a></li>
-                    <li><a href="#">Mi carito</a></li>
-                    <li><a href="#">Configuración</a></li>
-                </ul>
-            </nav> 
-        </div>
-        
-       
-    </header>
-
-
+              <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil" />
+              <ul>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Mi carito</a></li>
+                <li><a href="#">Configuración</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
     <div class="breadcrumb">
         <nav aria-label="Breadcrumb">
@@ -255,5 +266,6 @@
 </div>
  
 <script src="js/toogle.js"></script>
+<script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

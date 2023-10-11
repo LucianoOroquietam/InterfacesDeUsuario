@@ -1,702 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Gamer House</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="body">
     <div class="loading-container">
-        <div class="loading-animation"></div>
-        <div class="loading-text">Cargando...</div>
-        <div class="loading-progress">
-            <div class="loading-bar"></div>
-        </div>
+      <div class="loading-animation"></div>
+      <div class="loading-text">Cargando...</div>
+      <div class="loading-progress">
+        <div class="loading-bar"></div>
+      </div>
     </div>
 
     <header>
-        <div class="menu">
-            <div class="menu-button">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+      
+        <div class="menu-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
 
-          
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juego.html">Juego</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+    
+
+      <div>
+        <a href="index.html">
+          <div class="container-logo">
+            <h1 class="titulo-logo">Gamer House</h1>
+            <img
+              class="icono-logo-header"
+              src="imagenes/logo blanco.svg"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="buscador" action="#" method="get">
+        <input type="text" name="q" placeholder="Buscar Juego..." />
+
+        <img src="imagenes/iconos/icons8-lupa-50.png" alt="" />
+      </div>
+
+      <div class="icono-carrito-perfil">
+        <img
+          class="icono-carrito-compra"
+          src="imagenes/iconos/icons8-carrito-de-compras-30.png"
+          alt="carrito de compra"
+        />
+
+        <nav class="menu-perfil">
+          <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil" />
+          <ul>
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Mi carito</a></li>
+            <li><a href="#">Configuración</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner-principal">
+        <a href="juego.html"
+          ><img src="imagenes/4enlinea-index.png" alt="imagen 4 en linea"
+        /></a>
+        <p>Juego del día</p>
+      </section>
+
+      <section>
+        <h2 class="categoria">Destacado</h2>
+        <div class="container-carrusel">
+          <div class="flecha-izquierda">
+            <img src="imagenes/iconos/icons8-flecha-30_2.png" alt="" />
+          </div>
+          <div class="carrusel-destacado">
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="imagenes/clarence-scared-silly-364x242.jpg.webp"
+                alt="juego scared billy"
+              />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">scared billy</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (6).webp" alt="juego ucn" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">ucn</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon.webp" alt="juego plantas vs zombies" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">plantas vs zombies</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flecha-derecha">
+            <img src="imagenes/iconos/icons8-flecha-30_1.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="carruseles">
+        <div>
+          <h2 class="categoria">Acción</h2>
+          <div class="carrusel-chico">
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="imagenes/clarence-scared-silly-364x242.jpg.webp"
+                alt="juego scared billy"
+              />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">scared billy</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (6).webp" alt="juego ucn" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">ucn</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon.webp" alt="juego plantas vs zombies" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">plantas vs zombies</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div>
-            <a href="index.html">
-
-                <div class="container-logo">
-                    <h1 class="titulo-logo">Gamer House</h1>
-                    <img class="icono-logo-header" src="imagenes/logo blanco.svg" alt="">
+          <h2 class="categoria">Terror</h2>
+          <div class="carrusel-chico">
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
                 </div>
-            </a>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="imagenes/clarence-scared-silly-364x242.jpg.webp"
+                alt="juego scared billy"
+              />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">scared billy</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (6).webp" alt="juego ucn" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">ucn</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon.webp" alt="juego plantas vs zombies" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">plantas vs zombies</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+          </div>
         </div>
-       
-        
-        <form class="buscador" action="#" method="get">
-            <input type="text" name="q" placeholder="Buscar Juego...">
-           
-            <img src="imagenes/iconos/icons8-lupa-50.png" alt="">
-        </form>
 
-        <div class="icono-carrito-perfil">
-            <img class="icono-carrito-compra"  src="imagenes/iconos/icons8-carrito-de-compras-30.png" alt="carrito de compra">
-        
-            <nav class="menu-perfil">
-                <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil">
-                <ul>
-                    <li><a href="#">Mi perfil</a></li>
-                    <li><a href="#">Favoritos</a></li>
-                    <li><a href="#">Mi carito</a></li>
-                    <li><a href="#">Configuración</a></li>
-                </ul>
-            </nav> 
+        <div>
+          <h2 class="categoria">Carreras</h2>
+          <div class="carrusel-chico">
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="imagenes/clarence-scared-silly-364x242.jpg.webp"
+                alt="juego scared billy"
+              />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">scared billy</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (6).webp" alt="juego ucn" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">ucn</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon.webp" alt="juego plantas vs zombies" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">plantas vs zombies</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">Bola 8</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">the walking dead</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+              <div class="cuerpo-card">
+                <h3>Oferta de fin de semana</h3>
+                <h2 class="titulo-juego">minecraft</h2>
+                <div class="precio-oferta">
+                  <p>-50%</p>
+                  <div>
+                    <p class="precio-descuento">ARS$1200</p>
+                    <p>ARS$800</p>
+                  </div>
+                </div>
+                <p class="carrito">carrito</p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-       
-    </header>
-    
-    <main>
-        <section class="banner-principal">
-           <a href="juego.html"><img src="imagenes/4enlinea-index.png" alt="imagen 4 en linea"></a> 
-            <p>Juego del día</p>
-        </section>
-        
-        <section>
-            <h2 class="categoria">Destacado</h2>
-            <div class="container-carrusel">
-
-                <div class="flecha-izquierda">
-                    <img src="imagenes/iconos/icons8-flecha-30_2.png" alt="">
-                </div>
-                <div class="carrusel-destacado">
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/clarence-scared-silly-364x242.jpg.webp" alt="juego scared billy">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">scared billy</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (6).webp" alt="juego ucn">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">ucn</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon.webp" alt="juego plantas vs zombies">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">plantas vs zombies</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="flecha-derecha">
-                        <img src="imagenes/iconos/icons8-flecha-30_1.png" alt="">
-                    </div>
-                </div>
-         
-        </section>
-
-
-        
-       
-        <section class="carruseles">
-            <div>
-                <h2 class="categoria">Acción</h2>
-                <div class="carrusel-chico">
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/clarence-scared-silly-364x242.jpg.webp" alt="juego scared billy">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">scared billy</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (6).webp" alt="juego ucn">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">ucn</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon.webp" alt="juego plantas vs zombies">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">plantas vs zombies</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-
-            <div>
-                <h2 class="categoria">Terror</h2>
-                <div class="carrusel-chico">
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/clarence-scared-silly-364x242.jpg.webp" alt="juego scared billy">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">scared billy</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (6).webp" alt="juego ucn">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">ucn</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon.webp" alt="juego plantas vs zombies">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">plantas vs zombies</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                </div>
-            
-    
-            </div>
-
-            <div>
-                <h2 class="categoria">Carreras</h2>
-                <div class="carrusel-chico">
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/clarence-scared-silly-364x242.jpg.webp" alt="juego scared billy">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">scared billy</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (6).webp" alt="juego ucn">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">ucn</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon.webp" alt="juego plantas vs zombies">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">plantas vs zombies</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (2).webp" alt="juego bola 8">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">Bola 8</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon (10).webp" alt="juego the walking dead">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">the walking dead</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imagenes/icon_medium.webp" alt="juego minecraft">
-                        <div class="cuerpo-card">
-                            <h3>Oferta de fin de semana</h3>
-                            <h2 class="titulo-juego">minecraft</h2>
-                            <div class="precio-oferta">
-                                <p>-50%</p>
-                                <div>
-                                    <p class="precio-descuento">ARS$1200</p>
-                                    <p>ARS$800</p>
-                                </div>
-                            </div>
-                            <p class="carrito">carrito</p>
-                        </div>
-                    </div>
-                </div>
-            
-    
-            </div>
-
-        </section>
-
-           
-        
-
-        
+      </section>
     </main>
 
     <footer>
-        <div class="fat-footer">
-            <div>
-                <h2>Otras paginas</h2>
-                <p>Preguntas frecuentes</p>
-                <p>Terminos y Condiciones</p>
-                <p>Politica de Privacidad</p>
-                <p>Politica de Cookies</p>
-            </div>
-    
-            <div>
-                <h2>Conectemos</h2>
-                <p>Siguenos en las siguientes redes sociales</p>
-                <div>
-                    <img src="imagenes/iconos/iconoInstagram.svg" alt="">
-                    <img src="imagenes/iconos/iconoYt.svg" alt="">
-                    <img src="imagenes/icons8-facebook-30.png" alt="">
-                    <img src="imagenes/iconos/x.svg" alt="">
-                    <img src="imagenes/iconos/linkedin.svg" alt="">
-                </div>    
-            </div>
-    
-            <div>
-                <h2 class="">Sientete Libre De Contactarnos</h2>
-                <div class="pImagenes">
-                    <img class="pTelefono" src="imagenes/iconos/iconoTelefono.svg" alt="">
-                    <p class="fat-footer-pTelefono">+54 (0) 2281 578909</p>
-                </div>
-                
-                <div class="pImagenes">
-                    <img class="pTelefono" src="imagenes/iconos/mail.svg" alt="">
-                    <p class="fat-footer-pMail">gamerhouse@gmail.com</p>
-                </div>
-                <div class="pImagenes">
-                    <img style="width: 30px;" class="pTelefono" src="imagenes/logo blanco.svg" alt="">
-                    <p class="fat-footer-pLogo"><span>Gamer House</span></p>
-                </div>
-            </div>
-            
+      <div class="fat-footer">
+        <div>
+          <h2>Otras paginas</h2>
+          <p>Preguntas frecuentes</p>
+          <p>Terminos y Condiciones</p>
+          <p>Politica de Privacidad</p>
+          <p>Politica de Cookies</p>
         </div>
-        
-        <div class="fit-footer">
-            
-            <div class="fit-footer-copyrigth">
-                <p>2023 Todos los derechos reservados © <span>Gamer House</span> </p>
-                <div class="fit-footer-p">
-                    <a href="#" class="p-ffooter">Politicas de Privacidad</a>
-                    <a href="#" class="p-ffooter">Politica de Cookies</a>
-                    <a href="#" class="p-ffooter">Aviso Legal</a>
-                </div>   
-            </div>
-           
+
+        <div>
+          <h2>Conectemos</h2>
+          <p>Siguenos en las siguientes redes sociales</p>
+          <div>
+            <img src="imagenes/iconos/iconoInstagram.svg" alt="" />
+            <img src="imagenes/iconos/iconoYt.svg" alt="" />
+            <img src="imagenes/icons8-facebook-30.png" alt="" />
+            <img src="imagenes/iconos/x.svg" alt="" />
+            <img src="imagenes/iconos/linkedin.svg" alt="" />
+          </div>
         </div>
-        
+
+        <div>
+          <h2 class="">Sientete Libre De Contactarnos</h2>
+          <div class="pImagenes">
+            <img
+              class="pTelefono"
+              src="imagenes/iconos/iconoTelefono.svg"
+              alt=""
+            />
+            <p class="fat-footer-pTelefono">+54 (0) 2281 578909</p>
+          </div>
+
+          <div class="pImagenes">
+            <img class="pTelefono" src="imagenes/iconos/mail.svg" alt="" />
+            <p class="fat-footer-pMail">gamerhouse@gmail.com</p>
+          </div>
+          <div class="pImagenes">
+            <img
+              style="width: 30px"
+              class="pTelefono"
+              src="imagenes/logo blanco.svg"
+              alt=""
+            />
+            <p class="fat-footer-pLogo"><span>Gamer House</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fit-footer">
+        <div class="fit-footer-copyrigth">
+          <p>2023 Todos los derechos reservados © <span>Gamer House</span></p>
+          <div class="fit-footer-p">
+            <a href="#" class="p-ffooter">Politicas de Privacidad</a>
+            <a href="#" class="p-ffooter">Politica de Cookies</a>
+            <a href="#" class="p-ffooter">Aviso Legal</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="js/loading.js"></script>
     <script src="js/carrousel.js"></script>
     <script src="js/menuHamburguesa.js"></script>
-</body>
+</div>
+  </body>
 </html>
-
-
