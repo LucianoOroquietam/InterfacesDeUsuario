@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
     // Simular una carga de 5 segundos
     const loadingContainer = document.querySelector(".loading-container");
     //Mostrar contenedor de carga

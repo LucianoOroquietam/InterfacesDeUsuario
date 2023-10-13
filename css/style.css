@@ -51,6 +51,9 @@ html {
 
   --tamanio-fuente-h3-A: 1em;
   --tamanio-fuente-h3-B: 0.75em;
+
+  --sombra-default-letra: 2px 2px 3px black;
+  --sombra-banner:10px 10px 5px rgba(0, 0, 0, 0.75);
 }
 
 /*btn compartir*/
@@ -456,7 +459,7 @@ main section h2 {
   background-color: var(--color-negro); 
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 3;
 }
 
 .loading-animation {
@@ -612,9 +615,7 @@ main section h2 {
   font-size: var(--tamanio-fuente-h3-B);
   text-decoration: line-through;
 }
-.cuerpo-card div {
-  background-color: var(--color-acento-intermedio);
-}
+
 .cuerpo-card div div {
   background-color: var(--color-secundario-oscuro);
   width: 100%;
@@ -783,7 +784,7 @@ header div input {
   width: 1em;
 }
 .icono-perfil {
-  width: 1.5em;
+  width: 5rem;
 }
 
 .videos-juego img {
@@ -832,7 +833,153 @@ nav .nav {
   display: none; /* Ocultar el menú por defecto */
 }
 
+
+/*ESTILO CARDS*/
+section h2.categoria {
+  font-size: var(--tamanio-fuente-h2-A);
+  padding: 0;
+  margin-bottom: 0.25em;
+  color: var(--color-blanco);
+}
+.carrusel-destacado,
+.carrusel-chico,
+.cards-ofertas {
+  display: flex;
+  overflow: hidden;
+}
+
+.container-carrusel {
+  display: flex;
+  align-items: center;
+}
+.cards-juegos-para-ti {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.cards-juegos-para-ti h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+
+.carrusel-chico .card img,
+.cards-ofertas .card img,
+.cards-juegos-para-ti .card img {
+  width: 8em;
+  object-fit: cover;
+  height: 8em;
+}
+.carrusel-destacado .titulo-juego{
+  font-size: var(--tamanio-fuente-h3-A);
+  padding: .2em;
+
+}
+.carrusel-destacado .card img {
+  width: 12.5em;
+  object-fit: cover;
+  height: 12.5em;
+}
+.cuerpo-card {
+  background-color: var(--color-primario-intermedio);
+  object-fit: cover;
+  height: 6em;
+}
+.carrusel-chico .cuerpo-card,
+.cards-ofertas .cuerpo-card,
+.cards-juegos-para-ti .cuerpo-card {
+  height: 6em;
+}
+.juegos-para-ti {
+  padding: 2em;
+}
+.cuerpo-card h3, .descuento, .categoria{
+  text-shadow: var(--sombra-default-letra);
+}
+.cuerpo-card h3 {
+  margin: 0;
+  padding: .5em;
+  padding-bottom: 0;
+  font-size: var(--tamanio-fuente-h3-B);
+  text-transform: uppercase;
+  color: var(--color-blanco);
+  text-shadow: var(--sombra-default-letra);
+}
+.carrusel-chico .cuerpo-card h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.carrusel-chico .titulo-juego {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.titulo-juego {
+  font-size: var(--tamanio-fuente-h2-B);
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+.descuento{
+  color: var(--color-acento-claro);
+}
+.precio-oferta {
+  display: flex;
+  background-color: var(--color-acento-oscuro);
+}
+.precio-oferta p{
+  font-weight: var(--grosor-fuente-h1-A-B);
+  padding: 0;
+  margin: 0;
+}
+.precio-oferta div{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap:.4em;
+
+}
+.precio-viejo {
+  color: var(--color-negro-3);
+  font-size: var(--tamanio-fuente-h3-B);
+  text-decoration: line-through;
+  transform: translateY(.2em);
+}
+
+.cuerpo-card div div {
+  background-color: var(--color-secundario-oscuro);
+  width: 100%;
+}
+
+.oferta .cuerpo-card {
+  width: 50%;
+}
+.card .cuerpo-card .carrito-agregar, .card .cuerpo-card .carrito-devolver{
+  width: 2em;
+  height: 2em;
+}
+.carrito-compra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrito-compra p{
+  padding: 0 .5em ;
+  z-index:1;
+  background: linear-gradient(to right, #4f8b20, #59bf40);
+  font-size: var(--tamanio-fuente-h3-B);
+  transform: translateX(.9em);
+}
+.carrito-agregar,.carrito-devolver{
+  z-index: 2;
+}
+/*.carrito-agregar{
+  display: none;
+} */
+
+.carrito-devolver{
+  display: none;
+}
+
 /*Medias querys*/
+
+
+
+  
 
 @media (min-width: 991.98px) {
   /*Menu hamburguesa*/
@@ -846,14 +993,34 @@ nav .nav {
   }
 
   .nav.active {
-    display: block; /* Mostrar el menú cuando está activo */
+    display: block;
     margin-top: 26.875rem;
-    margin-left: -17rem;
-    padding: 1rem;
+    margin-left: -18.5rem;
     width: 12.5rem;
-    z-index: 1;
+  }
+
+  .nav.active,.menu-perfil.active{
+    display: block;
+    padding: 1rem;
     background-color: var(--color-primario-intermedio);
   }
+
+  .menu-perfil.active{
+    display: block;
+    margin-left: -11.5rem;
+    margin-top: 18.875rem;
+    
+  }
+
+  nav ul li a:hover{
+   background-color: var(--color-blanco); 
+   border-radius: 1rem;
+   color: var(--color-negro);
+   padding: .3rem;
+   font-weight: var(--grosor-fuente-h1-A-B);
+  }
+  
+  
 
   .menu-button.active .bar:nth-child(2) {
     opacity: 0;
@@ -929,7 +1096,7 @@ nav .nav {
     width: 8rem;
   }
   header .buscador img {
-    width: 2rem;
+    width: 2.5rem;
     padding: 0.5rem;
     margin-left: 10rem;
   }
@@ -1040,14 +1207,7 @@ nav .nav {
   .container-juego img {
     height: 32rem;
   }
-  .publicidad {
-    width: 150px;
-    height: 433px;
-  }
-  .publicidad img {
-    width: 150px;
-    height: 333px;
-  }
+
   .container-comentarios {
     display: flex;
     flex-direction: column;
@@ -1087,5 +1247,11 @@ nav .nav {
   }
   img.icono-carrito-compra {
     width: 2rem;
+    
+  }
+
+  .icono-carrito-perfil{
+    gap: .8rem;
   }
 }
+
