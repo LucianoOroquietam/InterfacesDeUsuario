@@ -83,12 +83,12 @@ html {
   transition: 0.3s ease all;
 }
 
-.boton.cinco span {
+.boton.compartir span {
   transition: 0.4s ease-in-out all;
   left: -10%;
 }
 
-.boton.cinco .icono {
+.boton.compartir .icono {
   display: flex;
   align-items: center;
   position: absolute;
@@ -98,69 +98,24 @@ html {
   opacity: 0;
 }
 
-.boton.cinco span {
+.boton.compartir span {
   color: var(--color-blanco);
   width: 35px;
   height: 35px;
 }
 
-.boton.cinco:hover {
+.boton.compartir:hover {
   background: var(--color-blanco);
 }
 
-.boton.cinco:hover .icono {
+.boton.compartir:hover .icono {
   left: calc(21% - 50px);
   opacity: 1;
 }
 
-.boton.cinco:hover span {
+.boton.compartir:hover span {
   left: 0;
   color: var(--color-secundario-intermedio);
-}
-
-.b-compartir {
-  background-image: url(../imagenes/iconos/iconoCompartir.svg);
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-  background-position: 1rem;
-}
-
-.container-descripcion button.btn-prueba {
-  width: 200px;
-  border-radius: 20px;
-  height: 100px;
-}
-
-.container-descripcion button img {
-  transition: 0.4s ease-in-out all;
-  position: absolute;
-  left: 17%;
-}
-
-.container-descripcion button img:hover {
-  left: 20px;
-}
-
-.container-descripcion .icono-compartir p {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  background-color: #007bff;
-  color: wheat;
-}
-
-.btn-prueba p {
-  left: 100%;
-}
-
-.btn-prueba:hover p {
-  left: calc(100%- 50px);
-}
-
-.a-compartir {
-  width: 18%;
-  text-align: end;
 }
 
 .menu a {
