@@ -15,6 +15,7 @@
   <body>
     <div class="body">
       <header>
+      
         <div class="menu-button">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -28,49 +29,51 @@
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
+    
 
-        <div>
-          <a href="index.html">
-            <div class="container-logo">
-              <h1 class="titulo-logo">Gamer House</h1>
-              <img
-                class="icono-logo-header"
-                src="imagenes/logo blanco.svg"
-                alt=""
-              />
-            </div>
-          </a>
+      <div>
+        <a href="index.html">
+          <div class="container-logo">
+            <h1 class="titulo-logo">Gamer House</h1>
+            <img
+              class="icono-logo-header"
+              src="imagenes/logo blanco.svg"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="buscador">
+        <input class="buscadorInput" type="text" name="" placeholder="Buscar Juego..." />
+
+        <img  src="imagenes/iconos/icons8-lupa-50.png" alt="icono perfil" />
+      </div>
+
+      <div class="icono-carrito-perfil">
+        <img
+          class="icono-carrito-compra"
+          src="imagenes/iconos/icons8-carrito-de-compras-30.png"
+          alt="carrito de compra"
+        />
+
+        <div class="icono-perfil">
+          <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil" />
         </div>
-
-        <div class="buscador" action="#" method="get">
-          <input type="text" name="q" placeholder="Buscar Juego..." />
-
-          <img src="imagenes/iconos/icons8-lupa-50.png" alt="" />
-        </div>
-
-        <div class="icono-carrito-perfil">
-          <img
-            class="icono-carrito-compra"
-            src="imagenes/iconos/icons8-carrito-de-compras-30.png"
-            alt="carrito de compra"
-          />
-
-          <nav>
-            <img src="imagenes/iconos/iconoPerfil.svg" alt="menu perfil" />
-            <ul class="menu-perfil">
-              <li><a href="#">Mi perfil</a></li>
-              <li><a href="#">Favoritos</a></li>
-              <li><a href="#">Mi carito</a></li>
-              <li><a href="#">Configuración</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <nav >
+          <ul id="menu-perfil" class="menu-perfil">
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Mi carito</a></li>
+            <li><a href="#">Configuración</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
       <div class="breadcrumb">
         <nav aria-label="Breadcrumb">
@@ -110,7 +113,7 @@
           />
         </section>
 
-        <h2 class="h2-descripcion">descripcion</h2>
+       
 
         <div class="container-descripcion">
           <button class="boton compartir">
@@ -138,7 +141,21 @@
               >
             </p>
           </div>
+         
+          <div class="container-juego-jugar">
+            <h2>Como Jugar</h2>
+          <img src="imagenes/iconos/icons8-jugar-30.png" alt="">
+          </div>
+          <p class="descripcion">
+            Forma una línea de 4 fichas iguales en cualquier dirección para ganar. 
+            Selecciona la ficha en la columna que queres que caiga (1 ficha por turno). 
+            Quien gane 3 partidas sera el ganador.
+          </p>
 
+          <div class="container-juego-descripcion">
+            <h2 class="h2-descripcion">descripcion</h2>
+            <img src="imagenes/iconos/descripcion.svg" alt="">
+          </div>
           <p class="descripcion">
             Cristian, el jefe de la empresa, ha perdido uno de los sueldos del
             mes y ha decidido que Fabri y Javi resuelvan el asunto a través de
@@ -146,12 +163,7 @@
             estrategia y habilidades para determinar quién se quedará con el
             sueldo del mes y quién deberá buscar un nuevo trabajo.
           </p>
-          <h2>COMO JUGAR</h2>
-          <p class="descripcion">
-            FORMA UNA LINEA DE 4 FICHAS IGUALES EN CUALQUIER DIRECCIÓN PARA
-            GANAR. SELECCIONA LA FICHA EN LA COLUMNA QUE QUERES QUE CAIGA (1
-            FICHA POR TURNO). QUIEN GANE 3 PARTIDAS COME EN EL MES.
-          </p>
+          
         </div>
       </section>
 
