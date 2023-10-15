@@ -35,11 +35,13 @@
           <ul class="nav">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="juego.html">Juego</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Destacado</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Gratis</a></li>
+            <li><a href="#">Juegos Para Ti</a></li>
+            <li><a href="#">Acccion</a></li>
+            <li><a href="#">Terror</a></li>
+            <li><a href="#">Carrera</a></li>
           </ul>
         </nav>
     
@@ -92,14 +94,14 @@
         <p>Juego del día</p>
       </section>
 
-      <section>
-        <h2 class="categoria">Destacado</h2>
+      <section >
+        <h2 class="categoria h2-destacado">Destacado</h2>
         <div class="container-carrusel">
           <div class="flecha-izquierda">
-            <img src="imagenes/iconos/icons8-flecha-30_2.png" alt="" />
+            <img src="imagenes/iconos/flechaIzquierda.svg" alt="" />
           </div>
-          <div class="carrusel-destacado">
-            <div class="card">
+          <ul class="carrusel-destacado">
+            <li id="card1" class="card">
               <img src="imagenes/icon (2).webp" alt="juego bola 8" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
@@ -117,8 +119,8 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-            <div class="card">
+            </li>
+            <li id="card2" class="card">
               <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
@@ -136,9 +138,9 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <img src="imagenes/icon_medium.webp" alt="juego minecraft" />
+            </li>
+            <li id="card3" class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
                 <h2 class="titulo-juego">Bola 8</h2>
@@ -155,12 +157,9 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <img
-                src="imagenes/clarence-scared-silly-364x242.jpg.webp"
-                alt="juego scared billy"
-              />
+            </li>
+            <li id="card4" class="card">
+              <img src="imagenes/icon (2).webp" alt="juego bola 8" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
                 <h2 class="titulo-juego">Bola 8</h2>
@@ -177,9 +176,9 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <img src="imagenes/icon (6).webp" alt="juego ucn" />
+            </li>
+            <li id="card5" class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
                 <h2 class="titulo-juego">Bola 8</h2>
@@ -196,9 +195,9 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <img src="imagenes/icon.webp" alt="juego plantas vs zombies" />
+            </li>
+            <li id="card6" class="card">
+              <img src="imagenes/icon (10).webp" alt="juego the walking dead" />
               <div class="cuerpo-card">
                 <h3>Oferta de fin de semana</h3>
                 <h2 class="titulo-juego">Bola 8</h2>
@@ -215,17 +214,193 @@
                   <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
                 </div>
               </div>
-            </div>
-          </div>
 
+              <li id="card7" class="card">
+                <img src="imagenes/icon (2).webp" alt="juego bola 8" />
+                <div class="cuerpo-card">
+                  <h3>Oferta de fin de semana</h3>
+                  <h2 class="titulo-juego">Bola 8</h2>
+                  <div class="precio-oferta">
+                    <p class="descuento">-50%</p>
+                    <div>
+                      <p class="precio-viejo">ARS$1200</p>
+                      <p class="descuento">ARS$800</p>
+                    </div>
+                  </div>
+                  <div class="carrito-compra">
+                    <p>CARRO 1<span id="contador-carrito"></span></p>
+                    <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                    <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                  </div>
+                </div>
+              </li>
+
+              
+              
+            </li>
+          </ul>
           <div class="flecha-derecha">
-            <img src="imagenes/iconos/icons8-flecha-30_1.png" alt="" />
+            <img src="imagenes/iconos/flechaDerecha.svg" alt="" />
           </div>
         </div>
       </section>
 
+
+      <section >
+        <div class="ofertas">
+            <h3 class="categoria">Ofertas</h3>
+            <div class="cards-ofertas">
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section >
+        <div class="juegos-para-ti">
+            <h3 class="categoria">Juegos para ti</h3>
+            <div class="cards-juegos-para-ti">
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/icon (2).webp" alt="juego bola 8">
+                    <div class="cuerpo-card">
+                        <h3>Oferta de fin de semana</h3>
+                        <h2 class="titulo-juego">Bola 8</h2>
+                        <div class="precio-oferta">
+                        <p class="descuento">-50%</p>
+                        <div>
+                            <p class="precio-viejo">ARS$1200</p>
+                            <p class="descuento">ARS$800</p>
+                        </div>
+                        </div>
+                        <div class="carrito-compra">
+                        <p>CARRO 1<span id="contador-carrito"></span></p>
+                        <img class="carrito-agregar" src="../imagenes/iconos/icons8-agregar-a-carrito-de-compras-30.png" alt="boton agregar a carrito">
+                        <img class="carrito-devolver" src="../imagenes/iconos/icons8-devolucion-de-compra-30.png" alt="boton agregar a carrito">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
       <section class="carruseles">
-        <div>
+        <div class="accion">
           <h2 class="categoria">Acción</h2>
           <div class="carrusel-chico">
             <div class="card">
@@ -405,7 +580,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="terror">
           <h2 class="categoria">Terror</h2>
           <div class="carrusel-chico">
             <div class="card">
@@ -585,7 +760,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="carreras">
           <h2 class="categoria">Carreras</h2>
           <div class="carrusel-chico">
             <div class="card">

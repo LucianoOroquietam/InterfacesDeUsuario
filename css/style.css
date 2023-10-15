@@ -489,7 +489,7 @@ main section h2 {
   }
 }
 
-/*Carrousel*/
+
 
 .titulo-logo {
   font-family: var(--fuente-logo);
@@ -503,10 +503,10 @@ main section h2 {
 
 .banner-principal img {
   width: 100%;
-
   height: 13em;
   display: flex;
   overflow-y: auto;
+  margin-top: .2rem;
 }
 
 .categoria {
@@ -515,107 +515,7 @@ main section h2 {
   margin-bottom: 0.25em;
   color: var(--color-blanco);
 }
-.carrusel-destacado,
-.carrusel-chico,
-.cards-ofertas {
-  display: flex;
-  overflow: hidden;
-}
 
-.container-carrusel {
-  display: flex;
-  align-items: center;
-}
-.cards-juegos-para-ti {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-}
-.cards-juegos-para-ti h3 {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-
-.carrusel-chico .card img,
-.cards-ofertas .card img,
-.cards-juegos-para-ti .card img {
-  width: 8em;
-  object-fit: cover;
-  height: 8em;
-}
-.carrusel-destacado .card img {
-  width: 12.5em;
-  object-fit: cover;
-  height: 12.5em;
-}
-.cuerpo-card {
-  background-color: var(--color-primario-intermedio);
-  object-fit: cover;
-  height: 14em;
-}
-.carrusel-chico .cuerpo-card,
-.cards-ofertas .cuerpo-card,
-.cards-juegos-para-ti .cuerpo-card {
-  height: 8em;
-}
-.juegos-para-ti {
-  padding: 2em;
-}
-.cuerpo-card h3 {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  color: var(--color-blanco);
-  text-shadow: var(--sombra-default-letra);
-}
-.carrusel-chico .cuerpo-card h3 {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-.carrusel-chico .titulo-juego {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-.titulo-juego {
-  font-size: var(--tamanio-fuente-h2-B);
-  text-transform: capitalize;
-}
-.precio-oferta {
-  display: flex;
-  align-items: center;
-}
-.precio-descuento {
-  color: var(--color-negro-3);
-  font-size: var(--tamanio-fuente-h3-B);
-  text-decoration: line-through;
-}
-
-.cuerpo-card div div {
-  background-color: var(--color-secundario-oscuro);
-  width: 100%;
-}
-
-.oferta .cuerpo-card {
-  width: 50%;
-}
-
-/* Estilos para el carrusel */
-.container-carrusel {
-  display: flex;
-  align-items: center;
-
-  position: relative;
-}
-
-.carrusel-destacado {
-  display: flex;
-  transition: transform 0.5s ease; /* Agregar transición suave */
-}
-
-.flecha-izquierda,
-.flecha-derecha {
-  cursor: pointer;
-}
-.flecha-izquierda {
-  transform: translateX(-0.52rem);
-  z-index: 1;
-}
 
 /*Footer*/
 
@@ -655,6 +555,263 @@ footer .fat-footer h2 {
   font-family: var(--tamanio-fuente-h2-B);
   font-weight: var(--grosor-fuente-h1-A-B);
 }
+
+/*Carrousel*/
+
+.container-carrusel {
+  display: flex;
+  align-items: center;
+}
+.cards-juegos-para-ti {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.cards-juegos-para-ti h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.card{
+  transition: all .5s ease-in-out;
+}
+
+.carrusel-chico .card img,
+.cards-ofertas .card img,
+.cards-juegos-para-ti .card img {
+  width: 8em;
+  height: 8em;
+}
+.carrusel-destacado .card img {
+  width: 12.5em;
+
+  height: 12.5em;
+}
+.cuerpo-card {
+  background-color: var(--color-primario-intermedio);
+
+  height: 14em;
+}
+.carrusel-chico .cuerpo-card,
+.cards-ofertas .cuerpo-card,
+.cards-juegos-para-ti .cuerpo-card {
+  height: 8em;
+}
+.juegos-para-ti {
+  padding: 2em;
+}
+.cuerpo-card h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: var(--color-blanco);
+  text-shadow: var(--sombra-default-letra);
+}
+.carrusel-chico .cuerpo-card h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.carrusel-chico .titulo-juego {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.titulo-juego {
+  font-size: var(--tamanio-fuente-h2-B);
+  text-transform: capitalize;
+}
+.precio-oferta {
+  display: flex;
+  align-items: center;
+}
+.ofertas .precio-viejo, .juegos-para-ti .precio-viejo, .accion .precio-viejo, .terror .precio-viejo,
+.carreras .precio-viejo{
+  display:none;
+}
+.precio-descuento {
+  color: var(--color-negro-3);
+  font-size: var(--tamanio-fuente-h3-B);
+  text-decoration: line-through;
+}
+
+.cuerpo-card div div {
+  background-color: var(--color-secundario-oscuro);
+  width: 100%;
+}
+
+.oferta .cuerpo-card {
+  width: 50%;
+}
+
+/* Estilos para el carrusel */
+.container-carrusel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carrusel-destacado {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease; /* Agregar transición suave */
+}
+
+
+
+.flecha-izquierda,
+.flecha-derecha {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 3.5rem;
+  color: var(--color-blanco);
+  
+}
+.flecha-izquierda {
+  transform: translateX(-0.52rem);
+  z-index: 1;
+}
+
+/*ESTILO CARDS*/
+section h2.categoria {
+  font-size: var(--tamanio-fuente-h2-A);
+  padding: 0;
+  margin-bottom: 0.25em;
+  color: var(--color-blanco);
+}
+
+
+.carrusel-chico,
+.cards-ofertas {
+  display: flex;
+  overflow-y: auto;
+}
+.container-carrusel {
+  display: flex;
+  align-items: center;
+  
+}
+.h2-destacado{
+  margin-top: -4rem;
+}
+.cards-juegos-para-ti {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.cards-juegos-para-ti h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+
+.carrusel-chico .card img,
+.cards-ofertas .card img,
+.cards-juegos-para-ti .card img {
+  width: 8em;
+  object-fit: cover;
+  height: 8em;
+}
+.carrusel-destacado .titulo-juego {
+  font-size: var(--tamanio-fuente-h3-A);
+  padding: 0.2em;
+}
+
+.cuerpo-card {
+  background-color: var(--color-primario-intermedio);
+  object-fit: cover;
+  height: 6em;
+}
+.carrusel-chico .cuerpo-card,
+.cards-ofertas .cuerpo-card,
+.cards-juegos-para-ti .cuerpo-card {
+  height: 6em;
+}
+.juegos-para-ti {
+  padding: 2em;
+}
+.cuerpo-card h3,
+.descuento,
+.categoria {
+  text-shadow: var(--sombra-default-letra);
+}
+.cuerpo-card h3 {
+  margin: 0;
+  padding: 0.5em;
+  padding-bottom: 0;
+  font-size: var(--tamanio-fuente-h3-B);
+  text-transform: uppercase;
+  color: var(--color-blanco);
+  text-shadow: var(--sombra-default-letra);
+}
+.carrusel-chico .cuerpo-card h3 {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.carrusel-chico .titulo-juego {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+
+.carrusel-chico .titulo-juego, .cards-ofertas .titulo-juego, .cards-juegos-para-ti .titulo-juego {
+  font-size: var(--tamanio-fuente-h3-B);
+}
+.titulo-juego {
+  font-size: var(--tamanio-fuente-h2-B);
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+.descuento {
+  color: var(--color-acento-claro);
+}
+.precio-oferta {
+  display: flex;
+  background-color: var(--color-acento-oscuro);
+}
+.precio-oferta p {
+  font-weight: var(--grosor-fuente-h1-A-B);
+  padding: 0;
+  margin: 0;
+}
+.precio-oferta div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+.precio-viejo {
+  color: var(--color-negro-3);
+  font-size: var(--tamanio-fuente-h3-B);
+  text-decoration: line-through;
+  transform: translateY(0.2em);
+}
+
+.cuerpo-card div div {
+  background-color: var(--color-secundario-oscuro);
+  width: 100%;
+}
+
+.oferta .cuerpo-card {
+  width: 50%;
+}
+.card .cuerpo-card .carrito-agregar,
+.card .cuerpo-card .carrito-devolver {
+  width: 2em;
+  height: 2em;
+}
+.carrito-compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrito-compra p {
+  padding: 0 0.5em;
+  z-index: 1;
+  background: linear-gradient(to right, #4f8b20, #59bf40);
+  font-size: var(--tamanio-fuente-h3-B);
+  transform: translateX(0.9em);
+}
+.carrito-agregar,
+.carrito-devolver {
+  z-index: 2;
+}
+/*.carrito-agregar{
+  display: none;
+} */
+
+.carrito-devolver {
+  display: none;
+}
+  
 
 /*Logo*/
 
@@ -790,148 +947,6 @@ nav .nav {
   display: none; /* Ocultar el menú por defecto */
 }
 
-/*ESTILO CARDS*/
-section h2.categoria {
-  font-size: var(--tamanio-fuente-h2-A);
-  padding: 0;
-  margin-bottom: 0.25em;
-  color: var(--color-blanco);
-}
-.carrusel-destacado,
-.carrusel-chico,
-.cards-ofertas {
-  display: flex;
-  overflow: hidden;
-}
-
-.container-carrusel {
-  display: flex;
-  align-items: center;
-}
-.cards-juegos-para-ti {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-}
-.cards-juegos-para-ti h3 {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-
-.carrusel-chico .card img,
-.cards-ofertas .card img,
-.cards-juegos-para-ti .card img {
-  width: 8em;
-  object-fit: cover;
-  height: 8em;
-}
-.carrusel-destacado .titulo-juego {
-  font-size: var(--tamanio-fuente-h3-A);
-  padding: 0.2em;
-}
-.carrusel-destacado .card img {
-  width: 12.5em;
-  object-fit: cover;
-  height: 12.5em;
-}
-.cuerpo-card {
-  background-color: var(--color-primario-intermedio);
-  object-fit: cover;
-  height: 6em;
-}
-.carrusel-chico .cuerpo-card,
-.cards-ofertas .cuerpo-card,
-.cards-juegos-para-ti .cuerpo-card {
-  height: 6em;
-}
-.juegos-para-ti {
-  padding: 2em;
-}
-.cuerpo-card h3,
-.descuento,
-.categoria {
-  text-shadow: var(--sombra-default-letra);
-}
-.cuerpo-card h3 {
-  margin: 0;
-  padding: 0.5em;
-  padding-bottom: 0;
-  font-size: var(--tamanio-fuente-h3-B);
-  text-transform: uppercase;
-  color: var(--color-blanco);
-  text-shadow: var(--sombra-default-letra);
-}
-.carrusel-chico .cuerpo-card h3 {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-.carrusel-chico .titulo-juego {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-.titulo-juego {
-  font-size: var(--tamanio-fuente-h2-B);
-  text-transform: capitalize;
-  padding: 0;
-  margin: 0;
-}
-.descuento {
-  color: var(--color-acento-claro);
-}
-.precio-oferta {
-  display: flex;
-  background-color: var(--color-acento-oscuro);
-}
-.precio-oferta p {
-  font-weight: var(--grosor-fuente-h1-A-B);
-  padding: 0;
-  margin: 0;
-}
-.precio-oferta div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4em;
-}
-.precio-viejo {
-  color: var(--color-negro-3);
-  font-size: var(--tamanio-fuente-h3-B);
-  text-decoration: line-through;
-  transform: translateY(0.2em);
-}
-
-.cuerpo-card div div {
-  background-color: var(--color-secundario-oscuro);
-  width: 100%;
-}
-
-.oferta .cuerpo-card {
-  width: 50%;
-}
-.card .cuerpo-card .carrito-agregar,
-.card .cuerpo-card .carrito-devolver {
-  width: 2em;
-  height: 2em;
-}
-.carrito-compra {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carrito-compra p {
-  padding: 0 0.5em;
-  z-index: 1;
-  background: linear-gradient(to right, #4f8b20, #59bf40);
-  font-size: var(--tamanio-fuente-h3-B);
-  transform: translateX(0.9em);
-}
-.carrito-agregar,
-.carrito-devolver {
-  z-index: 2;
-}
-/*.carrito-agregar{
-  display: none;
-} */
-
-.carrito-devolver {
-  display: none;
-}
 
 /*header*/
 .bar {
@@ -1057,6 +1072,15 @@ nav ul li a:hover {
 /*Medias querys*/
 
 @media (min-width: 991.98px) {
+
+  .carrusel-chico,
+.cards-ofertas {
+  overflow: hidden;
+}
+
+  .banner-principal img{
+    height: auto;
+  }
   .icono-perfil img {
     height: 3rem;
     transform: translateX(2.3rem);
@@ -1166,10 +1190,6 @@ nav ul li a:hover {
     justify-content: end;
     align-items: center;
     padding-right: 0;
-  }
-
-  .banner-principal img {
-    height: fit-content;
   }
 
   main {
