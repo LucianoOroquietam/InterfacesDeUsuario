@@ -232,9 +232,8 @@ input:focus {
 }
 
 .registro-verificado{
-  display: none; 
+ display: none;
 }
-
 .registro-verificado.show{
   position: absolute;
   display: block;
@@ -242,13 +241,19 @@ input:focus {
   width: 35%;
   padding: 1rem;
   line-height: 2;
-  background-color: var(--color-blanco);
-  border: .6rem solid var(--color-acento-claro);
+  background-color: var(--color-primario-intermedio);
+  border: .2rem solid var(--color-negro);
+}
+
+.registro-verificado img{
+  width: 100px;
+  height: 100px;
+  transform: translateX(12rem);
 }
 
 .registro-verificado p{
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -2rem;
   padding: 1rem;
   font-family: var(--tamanio-fuente-h1-A);
 }
