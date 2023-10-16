@@ -215,7 +215,28 @@ input:focus {
   justify-content: center;
   width: 100%;
   text-decoration: none;
+  opacity: 0.5;
+  
+  
 }
+
+.a-button button, .a-button{
+  cursor: not-allowed;
+}
+
+.a-button.active, .a-button button.active{
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+
+#registro-exitoso.registrado{
+  opacity: 0;
+  transition: opacity 1300ms
+}
+
+
 
 .container-buttons {
   display: flex;
@@ -804,6 +825,9 @@ section h2.categoria {
 .carrito-devolver {
   z-index: 2;
 }
+
+
+
 /*.carrito-agregar{
   display: none;
 } */
@@ -811,7 +835,25 @@ section h2.categoria {
 .carrito-devolver {
   display: none;
 }
-  
+
+.card {
+  transition: transform 0.3s ease; /* Agrega una transición suave a la propiedad transform */
+}
+
+.card.move-animation {
+  animation-name: moveCard;
+  animation-duration: 0.5s;
+}
+
+@keyframes moveCard {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%); /* Ajusta la distancia que quieras que se muevan las tarjetas */
+  }
+}
+
 
 /*Logo*/
 
