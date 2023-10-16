@@ -229,9 +229,32 @@ input:focus {
 #registro-exitoso.registrado{
   opacity: 0;
   transition: opacity 1300ms;
-  
 }
 
+.registro-verificado{
+  display: none; 
+}
+
+.registro-verificado.show{
+  position: absolute;
+  display: block;
+  height: 35%;
+  width: 35%;
+  padding: 1rem;
+  line-height: 2;
+  background-color: var(--color-blanco);
+  border: .6rem solid var(--color-acento-claro);
+}
+
+.registro-verificado p{
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-family: var(--tamanio-fuente-h1-A);
+}
+.registro-verificado p span{
+  font-family: var(--fuente-logo);
+}
 .container-buttons {
   display: flex;
   flex-direction: column;
@@ -1021,6 +1044,10 @@ h1.titulo-logo {
 header .icono-logo-header {
   width: 2rem;
   transform: translateX(20rem);
+}
+
+.logo-registro {
+  width: 6.25rem;
 }
 
 .menu-button {
