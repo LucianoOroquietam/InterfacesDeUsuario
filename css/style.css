@@ -215,28 +215,22 @@ input:focus {
   justify-content: center;
   width: 100%;
   text-decoration: none;
-  opacity: 0.5;
-  
   
 }
-
-.a-button button, .a-button{
+#button{
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
-.a-button.active, .a-button button.active{
+#button.active{
   cursor: pointer;
   opacity: 1;
 }
-
-
-
 #registro-exitoso.registrado{
   opacity: 0;
-  transition: opacity 1300ms
+  transition: opacity 1300ms;
+  
 }
-
-
 
 .container-buttons {
   display: flex;
