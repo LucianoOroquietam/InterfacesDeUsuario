@@ -15,5 +15,6 @@ menuButton.addEventListener('click', () => {
 
 
 iconoPerfil.addEventListener('click', () =>{
+    console.log("entro al evento de click icono perfil")
     menuPerfil.classList.toggle('active');
 });
