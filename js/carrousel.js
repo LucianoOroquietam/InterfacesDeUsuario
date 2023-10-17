@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardWidth = document.querySelector("#card").offsetWidth; // Ancho de una tarjeta
 
   const keyframeIzquierda = [
-    { transform: "skew(0deg, 0deg)" },
-    { transform: "skew(-10deg, 15deg)" },
-    { transform: "skew(0deg, 0deg)" }
+    { transform: `translateX(${cardWidth}px) skewX(0deg)` },
+    { transform: `translateX(${cardWidth}px) skewX(-5deg)` },
+    { transform: `translateX(${cardWidth}px) skewX(0deg)` }
   ];
+  
   const keyframeDerecha = [
-    { transform: "skew(0deg, 0deg)" },
-    { transform: "skew(10deg, -15deg)" },
-    { transform: "skew(0deg, 0deg)" }
+    { transform: `translateX(-${cardWidth}px) skewX(0deg)` },
+    { transform: `translateX(-${cardWidth}px) skewX(-5deg)` },
+    { transform: `translateX(-${cardWidth}px) skewX(0deg)` }
   ];
+  
 
   const cards = document.querySelectorAll("#card");
   const arrayCarrusel = Array.from(cards);
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     arrayCarrusel.forEach((card, index) => {
       card.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
       const keyframe = direction === 'left' ? keyframeIzquierda : keyframeDerecha;
-      card.animate(keyframe, 2000);
+      card.animate(keyframe, 1000);
     });
 
 

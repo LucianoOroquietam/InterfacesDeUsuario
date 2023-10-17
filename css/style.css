@@ -689,6 +689,7 @@ footer .fat-footer h2 {
 
 .carrusel-destacado {
   display: flex;
+  gap: 2rem;
   overflow: hidden;
   transition: transform 0.5s ease; /* Agregar transición suave */
 }
@@ -836,6 +837,14 @@ section h2.categoria {
   display: none;
 }
 
+.carrito-devolver.show{
+  display: block;
+}
+
+.carrito-agregar.hidden{
+  display: none;
+}
+
 .card {
   transition: transform 0.3s ease; /* Agrega una transición suave a la propiedad transform */
 }
@@ -885,7 +894,7 @@ header nav img {
 
 ul li {
   list-style: none;
-  margin-left: 1.2rem;
+  margin-left: -1.3rem;
   margin-top: 2rem;
 }
 
@@ -1154,6 +1163,53 @@ nav .menu-perfil.active {
 /*Medias querys*/
 
 @media only screen and (min-width: 1025px) {
+
+.carrusel-chico .cuerpo-card{
+  height: 8em;
+}
+
+.cards-juegos-para-ti .cuerpo-card,.cards-ofertas .cuerpo-card  {
+  height: 6rem;
+}
+
+
+  .cuerpo-card .precio-oferta{
+    width: 50%;
+  }
+  .precio-oferta div{
+    flex-direction: column;
+  }
+    
+  .carrusel-chico .carrito-compra,
+  .cards-juegos-para-ti .carrito-compra,
+  .carrusel-destacado .carrito-compra,.cards-ofertas .carrito-compra {
+    transform: translateX(3rem) translateY(-2.5rem);
+  }
+  
+  .carrusel-chico .cuerpo-card h3{
+    padding: 1rem;   
+  }
+
+  .cuerpo-card .titulo-juego{
+    font-size: var(--tamanio-fuente-h2-C);
+  }
+
+  .ofertas .precio-viejo, .juegos-para-ti .precio-viejo, .accion .precio-viejo, .terror .precio-viejo,
+.carreras .precio-viejo{
+  display:block;
+}
+
+.carrito-compra p{
+  display: none;
+}
+
+  .carrusel-destacado{
+    gap: 0;
+  }
+
+  ul li {
+    margin-left: 1.2rem;
+  }
   .juegos-para-ti{
     margin-left: 0;
   }
@@ -1215,17 +1271,10 @@ nav .menu-perfil.active {
   }
 
   .nav.active li {
-    width: 9rem;
+    width: 10rem;
     padding: 1.5rem;
     height: 1em;
     display: block;
-  }
-
-  /*Logo desplegable*/
-
-  .menu-perfil.active {
-    margin-left: -11.5rem;
-    margin-top: 18.875rem;
   }
 
   /*banner*/
