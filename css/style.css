@@ -621,26 +621,25 @@ footer .fat-footer h2 {
 .cards-ofertas .card img,
 .cards-juegos-para-ti .card img {
   width: 8em;
+  object-fit: cover;
   height: 8em;
 }
 .carrusel-destacado .card img {
   width: 12.5em;
-
   height: 12.5em;
 }
 .cuerpo-card {
   background-color: var(--color-primario-intermedio);
-
   height: 14em;
 }
 .carrusel-chico .cuerpo-card,
 .cards-ofertas .cuerpo-card,
 .cards-juegos-para-ti .cuerpo-card {
   height: 8em;
+  width: 8em;
 }
-.juegos-para-ti {
-  padding: 2em;
-}
+
+
 .cuerpo-card h3 {
   margin: 0;
   padding: 0;
@@ -739,13 +738,7 @@ section h2.categoria {
   font-size: var(--tamanio-fuente-h3-B);
 }
 
-.carrusel-chico .card img,
-.cards-ofertas .card img,
-.cards-juegos-para-ti .card img {
-  width: 8em;
-  object-fit: cover;
-  height: 8em;
-}
+
 .carrusel-destacado .titulo-juego {
   font-size: var(--tamanio-fuente-h3-A);
   padding: 0.2em;
@@ -754,16 +747,13 @@ section h2.categoria {
 .cuerpo-card {
   background-color: var(--color-primario-intermedio);
   object-fit: cover;
-  height: 6em;
 }
 .carrusel-chico .cuerpo-card,
 .cards-ofertas .cuerpo-card,
-.cards-juegos-para-ti .cuerpo-card {
+.cards-juegos-para-ti .cuerpo-card, .cuerpo-card {
   height: 6em;
 }
-.juegos-para-ti {
-  padding: 2em;
-}
+
 .cuerpo-card h3,
 .descuento,
 .categoria {
@@ -773,19 +763,12 @@ section h2.categoria {
   margin: 0;
   padding: 0.5em;
   padding-bottom: 0;
-  font-size: var(--tamanio-fuente-h3-B);
   text-transform: uppercase;
   color: var(--color-blanco);
-  text-shadow: var(--sombra-default-letra);
-}
-.carrusel-chico .cuerpo-card h3 {
-  font-size: var(--tamanio-fuente-h3-B);
-}
-.carrusel-chico .titulo-juego {
-  font-size: var(--tamanio-fuente-h3-B);
 }
 
-.carrusel-chico .titulo-juego, .cards-ofertas .titulo-juego, .cards-juegos-para-ti .titulo-juego {
+.carrusel-chico .titulo-juego, .cards-ofertas .titulo-juego, .cards-juegos-para-ti .titulo-juego,
+ .carrusel-chico .cuerpo-card h3 , .cuerpo-card h3 {
   font-size: var(--tamanio-fuente-h3-B);
 }
 .titulo-juego {
@@ -848,12 +831,6 @@ section h2.categoria {
 .carrito-devolver {
   z-index: 2;
 }
-
-
-
-/*.carrito-agregar{
-  display: none;
-} */
 
 .carrito-devolver {
   display: none;
@@ -1166,16 +1143,25 @@ nav .menu-perfil.active {
   margin-top: 18.875rem;
 }
 
-/*Medias querys*/
-
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
-  header div a .titulo-logo {
-    margin-left: -40.25rem;
-  }
+.juegos-para-ti{
+  margin-left: 1rem;
 }
 
+.cuerpo-card{
+  margin-top: -7px;
+}
+
+/*Medias querys*/
 
 @media only screen and (min-width: 1025px) {
+  .juegos-para-ti{
+    margin-left: 0;
+  }
+
+  .cards-ofertas .cuerpo-card{
+    width: auto;
+  }
+  
   header div a .titulo-logo {
     margin-left: -45.25rem;
     font-size: var(--tamanio-fuente-h1-texto-logo);
@@ -1432,6 +1418,29 @@ nav .menu-perfil.active {
     color: var(--color-blanco);
   }
 
+  .cards-ofertas{
+    justify-content: space-around;
+  }
+  .cards-ofertas .card img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .cards-juegos-para-ti, .carrusel-chico{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .cards-juegos-para-ti .card img , .carrusel-chico .card img{
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .cards-juegos-para-ti .cuerpo-card, .carrusel-chico .cuerpo-card{
+    width: 10rem;
+  }
+  
   h1.titulo-logo,
   img.icono-carrito-compra {
     display: block;
