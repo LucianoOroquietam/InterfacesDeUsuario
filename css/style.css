@@ -956,6 +956,7 @@ header div input {
 }
 .icono-perfil {
   width: 5rem;
+  cursor: pointer;
 }
 
 .videos-juego img {
